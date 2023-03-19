@@ -83,6 +83,7 @@ int consulta()
     	printf("\nEssas são as informações do usuário: ");
     	printf("%s", conteudo);
     	printf("\n\n");
+    	fclose(file);
 	}
 	
 	system("pause");
@@ -104,7 +105,7 @@ int deletar()
     
     if(file == NULL)
     {
-    	printf("O usuário não se econtra no sistema!.\n");
+    	printf("O usuário não se encontra no sistema!.\n");
     	system("pause");    	
 	}
       
